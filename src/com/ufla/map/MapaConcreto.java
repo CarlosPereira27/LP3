@@ -240,7 +240,7 @@ public class MapaConcreto<C, V> implements Mapa<C, V> {
 	 * 
 	 * @return hash da chave em módulo pela quantidade de entradas
 	 */
-	private int hash(Object chave) {
+	private int hash(C chave) {
 		return Math.abs(chave.hashCode()) % entradas.length;
 	}
 
